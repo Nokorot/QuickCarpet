@@ -297,6 +297,9 @@ public class Settings {
     @Rule(category = CREATIVE)
     public static boolean portalCreativeDelay = false;
 
+    @Rule(category = CREATIVE, options = {"1", "10", "80", "800"}, validator = Validator.NonNegative.class)
+    public static int netherPortalDelay = 80;
+
     @Rule(category = CREATIVE, options = {"10", "12", "14", "100"}, validator = Validator.NonNegative.class)
     public static int pushLimit = 12;
 
